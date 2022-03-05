@@ -1,6 +1,6 @@
-import "./App.css";
-import ClicerCount from "./componets/ClicerCount";
-import TodoListItem from "./componets/TodoListItem";
+import "./app.css";
+import ClicerCount from "../clicer-count/clicer-count";
+import TodoListItem from "../todo-list-item/todo-list-item";
 
 export default function App() {
     return (

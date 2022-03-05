@@ -1,5 +1,5 @@
 import {useSelector, useDispatch} from "react-redux";
-import {increment, decrement, reset} from './../store';
+import {increment, decrement, reset} from '../../store';
 
 export default function ClicerCount() {
     return (
