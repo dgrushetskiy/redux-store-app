@@ -1,4 +1,5 @@
 import {createStore, combineReducers} from "redux";
+import {devToolsEnhancer} from "redux-devtools-extension";
 
 const counterReducer = (state = 0, action) => {
     switch (action.type) {
@@ -51,7 +52,8 @@ const rootReducer = combineReducers({
 
 export const store = createStore(
     rootReducer,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    devToolsEnhancer()
+    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 // actions
