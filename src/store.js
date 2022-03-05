@@ -46,10 +46,13 @@ const todosReducer = (state = [], action) => {
 
 const rootReducer = combineReducers({
     counter: counterReducer,
-    todos:todosReducer
+    todos: todosReducer
 });
 
-export const store = createStore(rootReducer);
+export const store = createStore(
+    rootReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 // actions
 export const increment = {type: "INCREMENT"};
